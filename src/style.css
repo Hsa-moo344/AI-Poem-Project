@@ -19,15 +19,20 @@ h1 {
   color: #272044;
   text-align: center;
 }
-/* main {
-  margin-bottom: 30px;
-} */
-form {
+.form-container {
   padding: 36px;
   background-color: white;
   border-radius: 13px;
-  display: flex;
   margin-bottom: 30px;
+  box-shadow: 0px 20px 60px rgb(65, 58, 100, 0.08);
+}
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12;
 }
 .instruction {
   padding: 16px;
@@ -55,9 +60,22 @@ form {
   line-height: 2;
   border-left: 3px solid #885df1;
   box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
 }
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
 }

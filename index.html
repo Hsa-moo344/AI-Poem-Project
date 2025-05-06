@@ -13,21 +13,26 @@
     <header>
       <h1>Welcome to my AI Poem Project and feel free to suggest</h1>
     </header>
+
     <main>
-      <form id="poem-generator-form">
-        <input
-          type="text"
-          placeholder="Enter you poem here"
-          autofocus
-          required
-          autocomplete="off"
-          class="instruction"
-          id="user-instructions"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="poem" id="poem"></div>
+      <div class="fomr-container">
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter you poem here"
+            autofocus
+            required
+            autocomplete="off"
+            class="instruction"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e: Flower, Paris or Cheese</div>
+        <div class="poem hidden blink" id="poem"></div>
+      </div>
     </main>
+
     <footer>
       This is AI Project was coded by <strong>Hsa Moo Moo </strong> and is
       <a href="https://github.com/Hsa-moo344/AI-Poem-Project" target="_blank">

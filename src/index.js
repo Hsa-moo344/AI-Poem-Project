@@ -17,6 +17,10 @@ function generatePoem(event) {
   let context = "You are the best";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="blink">🙅‍♂️ Generating a French Poem about ${instructionsInput.value}</div>`;
+
   console.log("general poem....");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
